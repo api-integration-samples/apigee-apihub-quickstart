@@ -297,7 +297,7 @@ curl -X POST "https://apihub.googleapis.com/v1/projects/$PROJECT_ID/locations/$R
 --data-binary @- << EOF >> $LOG_FILE 2>&1
 
 {
-  "name": "projects/apigee-tlab1/locations/europe-west1/attributes/regions",
+  "name": "projects/$PROJECT_ID/locations/$REGION/attributes/regions",
   "displayName": "Regions",
   "description": "The regions that the API is active in.",
   "definitionType": "USER_DEFINED",
