@@ -357,3 +357,35 @@ curl -X POST "https://apihub.googleapis.com/v1/projects/$PROJECT_ID/locations/$R
   "cardinality": 20
 }
 EOF
+
+curl -X POST "https://apihub.googleapis.com/v1/projects/$PROJECT_ID/locations/$REGION/attributes?attributeId=source" \
+-H "Authorization: Bearer $(gcloud auth print-access-token)" \
+-H 'Content-Type: application/json; charset=utf-8' \
+--data-binary @- << EOF >> $LOG_FILE 2>&1
+
+{
+  "name": "projects/$PROJECT_ID/locations/$REGION/attributes/source",
+  "displayName": "Source",
+  "description": "The source of the API registration.",
+  "scope": "API",
+  "dataType": "ENUM",
+  "allowedValues": [
+    {
+      "id": "manual",
+      "displayName": "Manual",
+      "description": "Manual registration"
+    },
+    {
+      "id": "discovery",
+      "displayName": "Discovery",
+      "description": "Discovery automatic registration"
+    },
+    {
+      "id": "marketplace",
+      "displayName": "Marketplace",
+      "description": "Marketplace registration"
+    }
+  ],
+  "cardinality": 20
+}
+EOF
