@@ -101,54 +101,69 @@ curl -X PATCH "https://apihub.googleapis.com/v1/projects/$PROJECT_ID/locations/$
   "dataType": "ENUM",
   "allowedValues": [
     {
-      "id": "example-business-unit",
-      "displayName": "Personal Risk Management",
-      "description": "Personal Risk Management"
+      "id": "sales-and-marketing",
+      "displayName": "Sales & Marketing",
+      "description": "Sales & Marketing"
     },
     {
-      "id": "commercial-insurance-solutions",
-      "displayName": "Commercial Insurance Solutions",
-      "description": "Commercial Insurance Solutions"
+      "id": "financial-accounting",
+      "displayName": "Finance & Accounting",
+      "description": "Finance & Accounting"
     },
     {
-      "id": "life-and-legacy-planning",
-      "displayName": "Life & Legacy Planning",
-      "description": "Life & Legacy Planning"
+      "id": "human-resources",
+      "displayName": "Human Resources (HR)",
+      "description": "Human Resources (HR)"
     },
     {
-      "id": "group-benefits-and-wellness",
-      "displayName": "Group Benefits & Wellness",
-      "description": "Group Benefits & Wellness"
+      "id": "information-technology",
+      "displayName": "Information Technology (IT)",
+      "description": "Information Technology (IT)"
     },
     {
-      "id": "claims-resolution-center",
-      "displayName": "Claims Resolution Center",
-      "description": "Claims Resolution Center"
+      "id": "operations",
+      "displayName": "Operations",
+      "description": "Operations"
     },
     {
-      "id": "risk-assessment-and-underwriting",
-      "displayName": "Risk Assessment & Underwriting",
-      "description": "Risk Assessment & Underwriting"
+      "id": "research-and-development",
+      "displayName": "Research & Development (R&D)",
+      "description": "Research & Development (R&D)"
     },
     {
-      "id": "investment-and-asset-management",
-      "displayName": "Investment & Asset Management",
-      "description": "Investment & Asset Management"
+      "id": "product-management",
+      "displayName": "Product Management",
+      "description": "Product Management"
     },
     {
-      "id": "customer-care-and-support",
-      "displayName": "Customer Care & Support",
-      "description": "Customer Care & Support"
+      "id": "legal-and-compliance",
+      "displayName": "Legal & Compliance",
+      "description": "Legal & Compliance"
     },
     {
-      "id": "digital-innovation-and-technology",
-      "displayName": "Digital Innovation & Technology",
-      "description": "Digital Innovation & Technology"
+      "id": "customer-support",
+      "displayName": "Customer Service/Support",
+      "description": "Customer Service/Support"
     },
     {
-      "id": "strategic-partnerships-and-alliances",
-      "displayName": "Strategic Partnerships & Alliances",
-      "description": "Strategic Partnerships & Alliances"
+      "id": "supply-chain-management",
+      "displayName": "Supply Chain Management",
+      "description": "Supply Chain Management"
+    },
+    {
+      "id": "corporate-strategy",
+      "displayName": "Corporate Strategy",
+      "description": "Corporate Strategy"
+    },
+    {
+      "id": "business-development",
+      "displayName": "Business Development",
+      "description": "Business Development"
+    },
+    {
+      "id": "procurement",
+      "displayName": "Procurement",
+      "description": "Procurement"
     }
   ],
   "cardinality": 1
@@ -171,19 +186,19 @@ curl -X PATCH "https://apihub.googleapis.com/v1/projects/$PROJECT_ID/locations/$
   "dataType": "ENUM",
   "allowedValues": [
     {
-      "id": "example-team",
-      "displayName": "Policy Services Team",
-      "description": "Policy Services Team"
+      "id": "data-drivers",
+      "displayName": "The Data Drivers",
+      "description": "The Data Drivers"
     },
     {
-      "id": "claims-response-unit",
-      "displayName": "Claims Response Unit",
-      "description": "Claims Response Unit"
+      "id": "code-crafters",
+      "displayName": "The Code Crafters",
+      "description": "The Code Crafters"
     },
     {
-      "id": "underwriting-solutions-group",
-      "displayName": "Underwriting Solutions Group",
-      "description": "Underwriting Solutions Group"
+      "id": "solution-architects",
+      "displayName": "The Solution Architects",
+      "description": "The Solution Architects"
     },
     {
       "id": "the-navigators",
@@ -209,6 +224,11 @@ curl -X PATCH "https://apihub.googleapis.com/v1/projects/$PROJECT_ID/locations/$
       "id": "the-phoenix-group",
       "displayName": "The Phoenix Group",
       "description": "The Phoenix Group"
+    },
+    {
+      "id": "the-project-pioneers",
+      "displayName": "The Project Pioneers",
+      "description": "The Project Pioneers"
     }
   ],
   "cardinality": 1
@@ -267,24 +287,24 @@ curl -X POST "https://apihub.googleapis.com/v1/projects/$PROJECT_ID/locations/$R
       "description": "Payment processing APIs."
     },
     {
-      "id": "insurance",
-      "displayName": "INSURANCE",
-      "description": "Insurance related APIs."
+      "id": "production-manufacturing",
+      "displayName": "Production/Manufacturing",
+      "description": "Production/Manufacturing"
     },
     {
-      "id": "risk",
-      "displayName": "RISK",
-      "description": "Risk related APIs."
+      "id": "finance-and-accounting",
+      "displayName": "Finance and Accounting",
+      "description": "Finance and Accounting"
     },
     {
-      "id": "claims",
-      "displayName": "CLAIMS",
-      "description": "Claims related APIs."
+      "id": "ai-and-ml",
+      "displayName": "AI and ML",
+      "description": "AI and ML"
     },
     {
-      "id": "investment",
-      "displayName": "INVESTMENT",
-      "description": "Investment related APIs."
+      "id": "strategy-and-planning",
+      "displayName": "Strategy and Planning",
+      "description": "Strategy and Planning"
     }
   ],
   "cardinality": 1
@@ -300,7 +320,6 @@ curl -X POST "https://apihub.googleapis.com/v1/projects/$PROJECT_ID/locations/$R
   "name": "projects/$PROJECT_ID/locations/$REGION/attributes/regions",
   "displayName": "Regions",
   "description": "The regions that the API is active in.",
-  "definitionType": "USER_DEFINED",
   "scope": "API",
   "dataType": "ENUM",
   "allowedValues": [
